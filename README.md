@@ -16,7 +16,7 @@
     
     git clone https://github.com/Nexus2025/exchange-rate-checker.git
         
-Перейти в корневую папку проекта "exchange_rate_checker" и собрать образ на основе Dockerfile
+Перейти в корневую папку проекта "exchange-rate-checker" и собрать образ на основе Dockerfile
     
     docker build -t exchange-rate-checker .
     
