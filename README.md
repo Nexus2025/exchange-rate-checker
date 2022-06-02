@@ -16,7 +16,7 @@
     
     git clone https://github.com/Nexus2025/exchange-rate-checker.git
         
-Перейти в корневую папку "exchange_rate_checker" и собрать образ на основе Dockerfile
+Перейти в корневую папку проекта "exchange_rate_checker" и собрать образ на основе Dockerfile
     
     docker build -t exchange-rate-checker .
     
@@ -24,12 +24,12 @@
 
     docker run -it -p 8080:8080 exchange-rate-checker
     
-После запуска, сервис доступен по пути, где currencyCode - код валюты. Список кодов валют - https://docs.openexchangerates.org/docs/supported-currencies
+После запуска, сервис доступен по endpoint
 
-    /gif/rate-difference/usd?comparedCurrency={currencyCode}
+    GET /gif/rate-difference/usd?comparedCurrency={currencyCode}
     
-К примеру
+CurrencyCode - код валюты. Список кодов валют - https://docs.openexchangerates.org/docs/supported-currencies. Пример реального запроса:
  
     http://localhost:8080/gif/rate-difference/usd?comparedCurrency=RUB
 
-Приложение логирует в консоль даты, коды валют, курсы валют, тег и url адрес gif
+Приложение логирует в консоль даты, коды валют, курсы валют, тег и url адрес для скачивания gif
