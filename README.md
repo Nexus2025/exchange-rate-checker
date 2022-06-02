@@ -24,8 +24,7 @@
 
     docker run -it -p 8080:8080 exchange-rate-checker
     
-После запуска, приложение доступно по url, где currencyCode - код валюты
-Список кодов валют - https://docs.openexchangerates.org/docs/supported-currencies
+После запуска, сервис доступен по пути, где currencyCode - код валюты. Список кодов валют - https://docs.openexchangerates.org/docs/supported-currencies
 
     /gif/rate-difference/usd?comparedCurrency={currencyCode}
     
